@@ -7,6 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Description TODO
  * @Author marshal
  * @Date 7/11/20 10:25 AM
+ * 通过信号量（Semaphore）实现线程同步
  */
 public class SemaphoreExample {
 

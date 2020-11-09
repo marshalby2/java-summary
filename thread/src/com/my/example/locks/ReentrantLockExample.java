@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Description TODO
  * @Author marshal
  * @Date 7/11/20 10:25 AM
+ * 可重入锁
  */
 public class ReentrantLockExample {
 
