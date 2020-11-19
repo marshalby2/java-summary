@@ -16,17 +16,22 @@ public class GenericsTest {
         List<Women> womenList = new ArrayList<>();
         List<Object> objectList = new ArrayList<>();
 
+        // List<Human>
         f(humanList);
 //        f(manList); error
+//        f(womenList); error
 
+        // List<? extends Human>
         f2(humanList);
         f2(manList);
         f2(womenList);
 
+        // List<? super Human>
         f3(humanList);
         f3(objectList);
 
 
+        // List<?>
         f4(humanList);
         f4(womenList);
         f4(objectList);

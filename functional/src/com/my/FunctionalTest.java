@@ -12,7 +12,10 @@ public class FunctionalTest {
     public static void main(String[] args) {
 
         var list = List.of(1, 2, 3, 4, 5);
-        list.stream().map(e -> e * 2).forEach(System.out::println);
+//        list.stream().map(e -> e * 2).forEach(System.out::println);
+
+        Integer reduce = list.stream().reduce(0, Integer::sum);
+        System.out.println(reduce);
 
     }
 

@@ -7,9 +7,16 @@ package com.my.grammer;
  */
 public class SwitchTest {
     public static void main(String[] args) {
-        int i = 0;
-        switch (i)  {
-            case 1 -> System.out.println("this is 1");
-        }
+        final var num = 5; // constant
+        int i = (int) (Math.random() * 10);
+        var result = switch (i)  {
+            case 0 -> "zero";
+            case 1 -> "one";
+            case 2 -> "two";
+            case 3 -> "three";
+            case num -> "five";  // num must final,
+            default -> "many";
+        };
+        System.out.println(result);
     }
 }
