@@ -1,5 +1,6 @@
 package com.my;
 
+import java.util.HashMap;
 import java.util.Optional;
 
 /**
@@ -13,5 +14,11 @@ public class OptionalTest {
         Integer i = null;
         var integer = Optional.ofNullable(10).orElse(100);
         System.out.println(integer);
+
+        var map = new HashMap<Integer, String>();
+        map.put(1, "one");
+        map.put(2, "two");
+        map.put(3, "three");
+        System.out.println(map.get(4));
     }
 }
