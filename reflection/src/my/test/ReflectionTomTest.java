@@ -20,9 +20,11 @@ public class ReflectionTomTest {
 
         // 2. 操作Tom的Filed
 
-//        System.out.println(tom.name);
+        System.out.println(tom.name);
+//        System.out.println(tom.age);  // private filed is invisible
 
         tom.name = "Tom2";
+
         // 3. 操作Tom的Function
         Method f1 = clz.getDeclaredMethod("f2", String.class);
         Object result = f1.invoke(tom, "12345");
