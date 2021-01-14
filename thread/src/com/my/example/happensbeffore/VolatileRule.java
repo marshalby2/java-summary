@@ -4,6 +4,7 @@ package com.my.example.happensbeffore;
  * @Description TODO
  * @Author marshal
  * @Date 7/11/20 9:01 AM
+ * 对一个 volatile 变量的写操作， Happens-Before 于后续对这个 volatile 变量的读操作。
  */
 public class VolatileRule {
 

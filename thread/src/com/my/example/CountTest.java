@@ -35,6 +35,7 @@ public class CountTest {
         return test.count;
     }
 
+    // 如果给 calc() 方法加上 synchronized 最终结果是正确的 20000
     public static void main(String[] args) {
         System.out.println("The result is : " + CountTest.calc()); // 10000 ~ 20000
     }
